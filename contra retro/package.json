@@ -1,0 +1,12 @@
+{
+  "name": "contra-gravity-shift",
+  "version": "1.0.0",
+  "description": "Retro run-and-gun platformer with anti-gravity mechanics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["game", "contra", "retro", "html5", "canvas"],
+  "author": "",
+  "license": "MIT"
+}

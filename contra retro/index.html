@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTRA: GRAVITY SHIFT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+        
+        <!-- HUD Overlay -->
+        <div id="hud">
+            <div id="hud-top-left">
+                <span id="lives">❤×3</span>
+                <span id="score">SCORE: 00000000</span>
+                <span id="weapon">[MACHINE GUN]</span>
+            </div>
+            <div id="hud-bottom-center">
+                <div id="gravity-indicator">↑</div>
+            </div>
+            <div id="hud-bottom-right">
+                <span id="ammo">AMMO: ∞</span>
+            </div>
+        </div>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="menu active">
+            <div class="title">
+                <h1>CONTRA</h1>
+                <h2>GRAVITY SHIFT</h2>
+            </div>
+            <div class="menu-options">
+                <div class="menu-item selected" data-action="start">► START GAME</div>
+                <div class="menu-item" data-action="controls">CONTROLS</div>
+                <div class="menu-item" data-action="credits">CREDITS</div>
+            </div>
+            <div class="version">v1.0.0</div>
+        </div>
+
+        <!-- Controls Screen -->
+        <div id="controls-menu" class="menu">
+            <div class="title">
+                <h2>CONTROLS</h2>
+            </div>
+            <div class="controls-list">
+                <p><strong>ARROW KEYS / WASD</strong> - Move</p>
+                <p><strong>SPACEBAR</strong> - Jump</p>
+                <p><strong>Z / J</strong> - Shoot</p>
+                <p><strong>SHIFT</strong> - Aim Lock</p>
+                <p><strong>ESC</strong> - Pause</p>
+            </div>
+            <div class="menu-options">
+                <div class="menu-item selected" data-action="back">◄ BACK</div>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" class="menu">
+            <div class="title">
+                <h1>PAUSED</h1>
+            </div>
+            <div class="menu-options">
+                <div class="menu-item selected" data-action="resume">► RESUME</div>
+                <div class="menu-item" data-action="restart">RESTART LEVEL</div>
+                <div class="menu-item" data-action="quit">QUIT TO MENU</div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over-menu" class="menu">
+            <div class="title">
+                <h1>GAME OVER</h1>
+            </div>
+            <div id="final-score">FINAL SCORE: 00000000</div>
+            <div class="menu-options">
+                <div class="menu-item selected" data-action="restart">► RESTART</div>
+                <div class="menu-item" data-action="quit">QUIT TO MENU</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/physics.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/level.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
