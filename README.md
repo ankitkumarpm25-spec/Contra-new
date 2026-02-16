@@ -1,0 +1,1 @@
+I want to bring back Contra with a retro feel but in a way that feels new and exciting. The gameplay will stay classic, but the visuals will be simple 3D, so players can enjoy nostalgia with a modern twist.
